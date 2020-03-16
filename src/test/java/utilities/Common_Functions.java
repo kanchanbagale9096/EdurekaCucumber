@@ -110,7 +110,7 @@ public class Common_Functions {
       this.screenRecorder.stop();
     }
 	
-	public String GetXMLTagValue(String xmlpath, String tagname){
+	/*public String GetXMLTagValue(String xmlpath, String tagname){
 		
 		String val=null;
 
@@ -135,7 +135,7 @@ public class Common_Functions {
 		
 		return val;
 		
-	}
+	}*/
 	
 	public By locatorParser(String locator) {
 

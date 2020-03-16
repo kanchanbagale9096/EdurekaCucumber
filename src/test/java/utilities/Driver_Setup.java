@@ -66,32 +66,27 @@ public class Driver_Setup {
 
 	public WebDriver initializeTestBaseSetup(String browserType) {
 		try {
-			// browserType=CHROME
-			switch (browserType) 
-			{
-			case "IE":
-				driver = initIEDriver();
-				break;
-			case "CHROME":
-				System.out.println("hiiie im in chrome");
 			
+			
+			if (browserType.equalsIgnoreCase("CHROME")) 
+			{
+				System.out.println("hiiie im in chrome");
 				driver = initChromeDriver();
-				break;
-			case "FIREFOX":
+			} 
+			else if (browserType.equalsIgnoreCase("FIREFOX"))
+			{
 				System.out.println("hi I am in FFox");
 				driver = initFirefoxDriver();
-				break;
-			default:
-				System.out.println(
-						"browser : " + browserType + " is invalid, Launching Chrome as default for execution...");
-				driver = initChromeDriver();
-
-				// TC_ID=tcID;
-				//Url = appURL;
+			}
+			else 
+			{
+				System.err.println("Browser error");
+			}
+			
+			
 				browser_Type = browserType.toUpperCase();
 			
-			}
-		
+			
 			
 		} catch (Exception e) {
 			System.out.println("Error while launching browser....." + e.getStackTrace());

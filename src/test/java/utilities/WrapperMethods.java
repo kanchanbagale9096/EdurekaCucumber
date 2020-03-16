@@ -981,11 +981,11 @@ public class WrapperMethods {
 		}
 	}
 
-	public void waitForPageToLoad(WebDriver driver) {
+	/*public void waitForPageToLoad(WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(
 				Integer.parseInt(new Common_Functions().GetXMLTagValue(Constants.configPath + "Config.xml", "timeout")),
 				TimeUnit.SECONDS);
-	}
+	}*/
 
 	public boolean isTextPresent(WebDriver driver, String text) {
 		boolean flag = false;
@@ -1165,7 +1165,7 @@ public class WrapperMethods {
 		}
 	}
 
-	public void Javascriptexecutor_forClick(WebDriver driver, String frameName, String XpathObject, String ObjectName)
+	/*public void Javascriptexecutor_forClick(WebDriver driver, String frameName, String XpathObject, String ObjectName)
 			throws Throwable {
 		waitForPageToLoad(driver);
 		waitForFrameAndSwitch(driver, frameName);
@@ -1188,7 +1188,7 @@ public class WrapperMethods {
 		}
 
 	}
-
+*/
 	public String[] findElementsInArray(WebDriver driver, String ObjectxPath, String ObjectName)
 			throws InterruptedException, Exception {
 		String[] array = null;
@@ -1364,7 +1364,7 @@ public class WrapperMethods {
 
 	}
 
-	public void waitUntilExist(WebDriver driver, String ObjectxPath) throws Exception {
+	/*public void waitUntilExist(WebDriver driver, String ObjectxPath) throws Exception {
 		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 		int i = 1;
 		do {
@@ -1400,7 +1400,7 @@ public class WrapperMethods {
 			return false;
 
 		}
-	}
+	}*/
 
 	public void Clickbtn3(WebDriver screenName, String ObjectCSS, String Element_Name) throws Exception {
 		Thread.sleep(500);
@@ -1429,7 +1429,7 @@ public class WrapperMethods {
 		}
 	}
 
-	public void WaitFunction(WebDriver driver, String Message) throws Exception {
+	/*public void WaitFunction(WebDriver driver, String Message) throws Exception {
 		waitUntilExist(driver, "//*[contains(text(),'Loading...')]");
 		waitUntilExist(driver, "//*[contains(text(),'Loading...')]");
 		if (CheckifExist(driver, "//*[contains(text(),'Attention')]", 3)) {
@@ -1437,7 +1437,7 @@ public class WrapperMethods {
 			new Exception("Attention Error Occured");
 		}
 
-	}
+	}*/
 
 	public void waituntilDisplayed(WebDriver driver, String xpath) throws InterruptedException
 
@@ -1462,7 +1462,7 @@ public class WrapperMethods {
 
 	}
 
-	public boolean CheckifTextExistAndReport(WebDriver driver, String element, String Element_Name)
+	/*public boolean CheckifTextExistAndReport(WebDriver driver, String element, String Element_Name)
 			throws InterruptedException {
 		try {
 			// driver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS);
@@ -1509,7 +1509,7 @@ public class WrapperMethods {
 
 			return false;
 		}
-	}
+	}*/
 
 	public void MouseClick(WebDriver driver, String Xpath) throws AWTException {
 		Robot bot = new Robot();
@@ -1538,7 +1538,7 @@ public class WrapperMethods {
 		}
 
 	}
-
+/*
 	public boolean CheckifTextExistwithoutReport(WebDriver driver, String element, String Element_Name)
 			throws InterruptedException {
 		try {
@@ -1571,9 +1571,9 @@ public class WrapperMethods {
 			return false;
 		}
 
-	}
+	}*/
 
-	public void Javascriptexecutor_forClick(WebDriver driver, String XpathObject, String ObjectName) throws Throwable {
+	/*public void Javascriptexecutor_forClick(WebDriver driver, String XpathObject, String ObjectName) throws Throwable {
 		waitForPageToLoad(driver);
 		// waitForFrameAndSwitch(driver, frameName);
 		waitForPageToLoad(driver);
@@ -1595,7 +1595,7 @@ public class WrapperMethods {
 		}
 
 	}
-
+*/
 	public void javascriptExecutor_Setvalue(WebDriver driver, String Xpath, String data, String ElementName) {
 		WebElement VVIN = driver.findElement(By.xpath(Xpath));
 		JavascriptExecutor myExecutor = ((JavascriptExecutor) driver);
