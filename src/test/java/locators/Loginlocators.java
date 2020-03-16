@@ -7,4 +7,5 @@ public static String inpEmail ="//input[@id='si_popup_email']";
 public static String inpPassword ="//input[@id='si_popup_passwd']";
 public static String btnLogin ="//button[@class='clik_btn_log btn-block']";
 
+
 }
